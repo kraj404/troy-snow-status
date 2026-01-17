@@ -21,3 +21,8 @@
 - [x] Deployment <!-- id: 18 -->
     - [x] Create deployment guide <!-- id: 19 -->
     - [x] Prepare project for deployment <!-- id: 20 -->
+    - [x] Publish to GitHub <!-- id: 21 -->
+- [x] Add Advanced Notifications <!-- id: 22 -->
+    - [x] Create .env.example for credentials <!-- id: 25 -->
+    - [x] Update Python script for Email support <!-- id: 23 -->
+    - [x] Update Python script for Twitter support <!-- id: 24 -->

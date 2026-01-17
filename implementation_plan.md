@@ -40,6 +40,11 @@ I will also provide a Python script for command-line usage.
 - CLI arguments for section number and polling interval.
 - Prints status to console.
 - Sends desktop notification (using `plyer` or system commands) when complete.
+- **[NEW] Email Notification**: Securely send email alerts using SMTP (Gmail/Outlook).
+- **[NEW] Twitter Notification**: Post a tweet when status is complete using Twitter API.
+
+## Configuration
+I will create a `.env.example` file to show how to securely store credentials for Twitter and Email.
 
 ## Deployment Strategy
 Since this is a static web application, it can be deployed to any static site hosting service.

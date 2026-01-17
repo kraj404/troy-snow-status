@@ -4,8 +4,8 @@ I have created a notification application to check the snow cleaning status for 
 
 ## Components
 
-1.  **Web Application (`index.html`)**: A user-friendly interface to check status and get browser notifications. Built with TypeScript.
-2.  **Python Script (`check_snow_status.py`)**: A command-line tool for checking status and getting desktop notifications.
+1.  **Web Application ([index.html](file:///Users/I808883/.gemini/antigravity/brain/e32ba253-8e99-4635-9848-02b00fb21049/index.html))**: A user-friendly interface to check status and get browser notifications. Built with TypeScript.
+2.  **Python Script ([check_snow_status.py](file:///Users/I808883/.gemini/antigravity/brain/e32ba253-8e99-4635-9848-02b00fb21049/check_snow_status.py))**: A command-line tool for checking status and getting desktop notifications.
 
 ## How to Use
 
@@ -15,7 +15,7 @@ I have created a notification application to check the snow cleaning status for 
     npm install
     npx tsc
     ```
-2.  Open `index.html` in your web browser.
+2.  Open [index.html](file:///Users/I808883/.gemini/antigravity/brain/e32ba253-8e99-4635-9848-02b00fb21049/index.html) in your web browser.
 3.  Enter your **Section Number** (e.g., 14).
 4.  Click **Check Status** to see the current status.
 4.  Click **Notify Me** to start monitoring. The app will check every minute and send a browser notification when the status becomes "COMPLETED".
@@ -33,8 +33,7 @@ python3 check_snow_status.py --section 14
 ```bash
 python3 check_snow_status.py --section 14 --poll 60
 ```
-*   The script will send desktop, email, and Twitter notifications when the section is completed (if configured).
-*   See [NOTIFICATIONS.md](file:///Users/I808883/.gemini/antigravity/brain/e32ba253-8e99-4635-9848-02b00fb21049/NOTIFICATIONS.md) for setup instructions.
+*   The script will send a desktop notification when the section is completed.
 *   Press `Ctrl+C` to stop monitoring.
 
 ## Verification Results
@@ -48,6 +47,4 @@ python3 check_snow_status.py --section 14 --poll 60
 - [index.html](file:///Users/I808883/.gemini/antigravity/brain/e32ba253-8e99-4635-9848-02b00fb21049/index.html)
 - [src/app.ts](file:///Users/I808883/.gemini/antigravity/brain/e32ba253-8e99-4635-9848-02b00fb21049/src/app.ts)
 - [tsconfig.json](file:///Users/I808883/.gemini/antigravity/brain/e32ba253-8e99-4635-9848-02b00fb21049/tsconfig.json)
-- [check_snow_status.py](file:///Users/I808883/.gemini/antigravity/brain/e32ba253-8e99-4635-9848-02b00fb21049/check_snow_status.py) - Now supports Email and Twitter notifications!
-- [NOTIFICATIONS.md](file:///Users/I808883/.gemini/antigravity/brain/e32ba253-8e99-4635-9848-02b00fb21049/NOTIFICATIONS.md) - Setup guide for Email and Twitter
-- [.env.example](file:///Users/I808883/.gemini/antigravity/brain/e32ba253-8e99-4635-9848-02b00fb21049/.env.example) - Template for credentials
+- [check_snow_status.py](file:///Users/I808883/.gemini/antigravity/brain/e32ba253-8e99-4635-9848-02b00fb21049/check_snow_status.py)

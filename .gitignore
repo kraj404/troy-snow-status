@@ -1,0 +1,19 @@
+# Environment variables (contains sensitive credentials)
+.env
+
+# Node modules
+node_modules/
+
+# Compiled TypeScript
+dist/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+
+# IDE files
+.vscode/
+.idea/

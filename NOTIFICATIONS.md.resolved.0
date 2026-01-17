@@ -1,0 +1,65 @@
+# Email and Twitter Notifications Setup
+
+The Python script [check_snow_status.py](file:///Users/I808883/.gemini/antigravity/brain/e32ba253-8e99-4635-9848-02b00fb21049/check_snow_status.py) now supports Email and Twitter notifications when snow cleaning is complete.
+
+## Email Notifications (Gmail)
+
+1. **Enable 2-Factor Authentication** on your Gmail account
+2. **Generate an App Password**:
+   - Go to [Google Account Settings](https://myaccount.google.com/)
+   - Security → 2-Step Verification → App passwords
+   - Select "Mail" and your device
+   - Copy the generated 16-character password
+
+3. **Create `.env` file** (copy from [.env.example](file:///Users/I808883/.gemini/antigravity/brain/e32ba253-8e99-4635-9848-02b00fb21049/.env.example)):
+   ```bash
+   cp .env.example .env
+   ```
+
+4. **Edit `.env`** and set:
+   ```
+   EMAIL_ENABLED=true
+   EMAIL_FROM=your-email@gmail.com
+   EMAIL_TO=recipient@example.com
+   EMAIL_PASSWORD=your-16-char-app-password
+   SMTP_SERVER=smtp.gmail.com
+   SMTP_PORT=587
+   ```
+
+## Twitter Notifications
+
+1. **Get Twitter API Access**:
+   - Go to [Twitter Developer Portal](https://developer.twitter.com/en/portal/dashboard)
+   - Create a new Project and App
+   - Under "User authentication settings", enable OAuth 1.0a with Read and Write permissions
+   - Generate API Key, API Secret, Access Token, and Access Token Secret
+
+2. **Install tweepy**:
+   ```bash
+   pip install tweepy
+   ```
+
+3. **Edit `.env`** and set:
+   ```
+   TWITTER_ENABLED=true
+   TWITTER_API_KEY=your-api-key
+   TWITTER_API_SECRET=your-api-secret
+   TWITTER_ACCESS_TOKEN=your-access-token
+   TWITTER_ACCESS_SECRET=your-access-secret
+   ```
+
+## Usage
+
+Run the script with polling enabled:
+```bash
+python3 check_snow_status.py --section 14 --poll 60
+```
+
+When the section is completed, the script will:
+- ✅ Show a desktop notification
+- ✅ Send an email (if configured)
+- ✅ Post a tweet (if configured)
+
+## Security Note
+
+**Never commit your `.env` file to Git!** It contains sensitive credentials. The `.env` file is already in `.gitignore`.

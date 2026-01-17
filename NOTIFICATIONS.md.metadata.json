@@ -1,0 +1,5 @@
+{
+  "artifactType": "ARTIFACT_TYPE_OTHER",
+  "summary": "Documentation for setting up Email and Twitter notifications in the Python snow status checker. Includes step-by-step instructions for obtaining API credentials and configuring the .env file.",
+  "updatedAt": "2026-01-17T19:38:11.988180Z"
+}
