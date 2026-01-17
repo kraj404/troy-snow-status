@@ -22,10 +22,10 @@ GitHub Pages is the easiest way to host this project if you already use GitHub.
     git add .
     git commit -m "Initial commit"
     git branch -M main
-    git remote add origin https://github.com/YOUR_USERNAME/troy-snow-status.git
+    git remote add origin https://github.com/kraj404/troy-snow-status.git
     git push -u origin main
     ```
-    *(Replace `YOUR_USERNAME` with your actual GitHub username)*
+    *(Replace `kraj404` if using a different account)*
 
 3.  **Enable GitHub Pages**:
     -   Go to your repository **Settings** > **Pages**.
