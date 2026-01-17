@@ -1,0 +1,40 @@
+# Walkthrough - Troy Snow Cleaning Notification App
+
+I have created a notification application to check the snow cleaning status for the City of Troy, MI.
+
+## Components
+
+1.  **Web Application ([index.html](file:///Users/I808883/.gemini/antigravity/brain/e32ba253-8e99-4635-9848-02b00fb21049/index.html))**: A user-friendly interface to check status and get browser notifications.
+2.  **Python Script ([check_snow_status.py](file:///Users/I808883/.gemini/antigravity/brain/e32ba253-8e99-4635-9848-02b00fb21049/check_snow_status.py))**: A command-line tool for checking status and getting desktop notifications.
+
+## How to Use
+
+### Web Application
+1.  Open [index.html](file:///Users/I808883/.gemini/antigravity/brain/e32ba253-8e99-4635-9848-02b00fb21049/index.html) in your web browser.
+2.  Enter your **Section Number** (e.g., 14).
+3.  Click **Check Status** to see the current status.
+4.  Click **Notify Me** to start monitoring. The app will check every minute and send a browser notification when the status becomes "COMPLETED".
+    *   *Note: You must allow browser notifications when prompted.*
+
+### Python Script
+You can run the script from your terminal.
+
+**Check status once:**
+```bash
+python3 check_snow_status.py --section 14
+```
+
+**Monitor status (polls every 60 seconds):**
+```bash
+python3 check_snow_status.py --section 14 --poll 60
+```
+*   The script will send a desktop notification when the section is completed.
+*   Press `Ctrl+C` to stop monitoring.
+
+## Verification Results
+- **Automated Tests**: Passed. Verified API response parsing and error handling.
+- **Manual Verification**: Successfully fetched status "COMPLETED" for section 14 using the Python script.
+
+## Files
+- [index.html](file:///Users/I808883/.gemini/antigravity/brain/e32ba253-8e99-4635-9848-02b00fb21049/index.html)
+- [check_snow_status.py](file:///Users/I808883/.gemini/antigravity/brain/e32ba253-8e99-4635-9848-02b00fb21049/check_snow_status.py)
